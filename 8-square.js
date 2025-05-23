@@ -1,6 +1,6 @@
 let args = process.argv.slice(2);
 
-if(args.length === 0){
+if(args.length === 0 || isNaN(parseInt(args[0]))){
     console.log('Missing size');
 }
 else{
