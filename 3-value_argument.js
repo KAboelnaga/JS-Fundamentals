@@ -1,9 +1,9 @@
-let args = process.argv;
-
-if (args.at(-1) === __filename.split('/').pop()){
+let args = process.argv.slice(2);
+let i = 0;
+for (i in args);
+if (i === 0){
     console.log('No argument');
 }
 else{
-    args = args.slice(2);
     console.log(args);
 }
