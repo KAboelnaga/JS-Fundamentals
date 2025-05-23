@@ -5,5 +5,7 @@ if (i === 0){
     console.log('No argument');
 }
 else{
-    console.log(args);
+    for (const arg in args){
+        console.log(arg);
+    }
 }
